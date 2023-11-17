@@ -1,10 +1,41 @@
 from flask import Flask, render_template, request, redirect, url_for
+import mysql.connector
 import sqlite3
+from flaskext.mysql import MySQL
 
 app = Flask(__name__)
 
 # Configuration
 DATABASE = 'database.db'
+mysql0 = MySQL()
+app.config['MYSQL_DATABASE_USER'] = 'root'
+app.config['MYSQL_DATABASE_PASSWORD'] = 'root'
+app.config['MYSQL_DATABASE_DB'] = 'EmpData'
+app.config['MYSQL_DATABASE_HOST'] = 'localhost'
+
+mysql0.init_app(app=app)
+
+from flask import Flask
+import MySQLdb
+
+app = Flask(__name__)
+
+db = MySQLdb.connect("localhost", "root", "yourDbPassWord", "DBname")
+
+@app.route('/api/v1.0/items', methods=['GET'])
+
+class User(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    username = db.Column(db.String(80), unique=True)
+    email = db.Column(db.String(120), unique=True)
+
+    def __init__(self, username, email):
+        self.username = username
+        self.email = email
+
+    def __repr__(self):
+        return '<User %r>' % self.username
+
 
 def create_table():
     with sqlite3.connect(DATABASE) as conn:
