@@ -3,24 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SQLite Database Example</title>
+    <title>Data Science SQL Project</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Tasks</h1>
-    <ul>
-        {% for task in tasks %}
-            <li>
-                {{ task[1] }}
-                <a href="{{ url_for('delete', task_id=task[0]) }}">Delete</a>
-            </li>
-        {% endfor %}
-    </ul>
-    <form action="/add" method="post">
-        <label for="title">New Task:</label>
-        <input type="text" id="title" name="title" required>
-        <button type="submit">Add</button>
-    </form>
+    <div class="button-group">
+        <button id="eventBtn">Event</button>
+        <button id="memberBtn">Member</button>
+        <button id="tlBtn">TL</button>
+        <button id="slcRepsBtn">SLC Reps</button>
+    </div>
+
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Enter name...">
+        <button id="searchBtn">Search</button>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
-
