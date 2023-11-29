@@ -1,20 +1,15 @@
 from flask import Flask, render_template, request, redirect, url_for
 import mysql.connector
+from mysql.connector import (connection)
 import pandas as pd
 
 app = Flask(__name__)
 
 app.config["DEBUG"] = True
 
-db = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="password",
-    database='tsa-sql-database'
-)
+db = connection.MySQLConnection(user="test", password="password1234", host="localhost", database='tsa-sql-database')
 
-connection = mysql.connector.connect(**db)
-cursor = connection.cursor()
+cursor = db.cursor()
 
 @app.route('/')
 def index():
