@@ -1,0 +1,40 @@
+id,name,TL1,TL2,TL3,project,member_number,status
+0,"""Animatronics""","""Dua Bashir""","""Aleesha Bhatti""","""""",TRUE,7,TRUE
+1,"""Architectural Design""","""John Huyhn""","""Crystal Munoz""","""Jessica Le""",TRUE,33,TRUE
+2,"""Audio Podcasting""","""Sarah Ninan""","""Genesis Cruz""","""""",TRUE,13,TRUE
+3,"""Biotechnology Design""","""Khadija Ayub""","""Jade Lasanajak""","""""",TRUE,25,TRUE
+4,"""Board Game Design""","""Shreya Srinivasan""","""Rayna Chang""","""""",TRUE,12,TRUE
+5,"""Computer Aided Design""","""Dua Bashir""","""Aleesha Bhatti""","""""",TRUE,9,TRUE
+6,"""Children's Stories""","""Eleanor Trobradovic""","""Daphne Phan""","""""",TRUE,13,TRUE
+7,"""Coding""","""Mitesh Shah""","""Sanjar Zaman""","""""",FALSE,25,TRUE
+8,"""Data Science and Analytics""","""Mitesh Shah""","""Steven Zhou""","""""",TRUE,27,TRUE
+9,"""Debating Technological Issues""","""Ritika Vakharia""","""Elliot Lee""","""""",FALSE,11,TRUE
+10,"""Digital Video Production""","""Daniel Hwang""","""Sohaib Samad""","""Chameli Tissera""",TRUE,31,TRUE
+11,"""Dragster Design""","""Iliyan Gilani""","""Abraham Pena""","""""",TRUE,4,TRUE
+12,"""Drone Challenge (UAV)""","""Zoe Lee""","""Jimmy Tran""","""""",TRUE,18,TRUE
+13,"""Engineering Design""","""Katie Chen""","""Aarshya Dhiljith""","""""",TRUE,23,TRUE
+14,"""Essays on Technology""","""Chameli Tissera""","""Paige Ford""","""""",FALSE,4,TRUE
+15,"""Extemporaneous Speech""","""Fanta Maiga""","""""","""""",FALSE,2,TRUE
+16,"""Fashion Design and Technology""","""Nancy Wang""","""Anna Ale""","""Mishka Lakhani""",TRUE,31,TRUE
+17,"""Flight Endurance""","""Isaac Jerish""","""Jason Dong""","""""",TRUE,15,TRUE
+18,"""Forensic Science""","""Yash Shah""","""Temi Onodipe""","""""",FALSE,25,TRUE
+19,"""Future Technology Teacher""","""Kevin Jacob""","""""","""""",TRUE,5,TRUE
+20,"""GA Cybersecurity""","""Bibek Bhattarai""","""Anish Goyal""","""""",FALSE,13,TRUE
+21,"""GA Electrical Applications""","""Yinuo Song""","""""","""""",FALSE,8,TRUE
+22,"""Geospatial Technology""","""Steven Zhou""","""Krish Patel""","""""",TRUE,25,TRUE
+23,"""Manufacturing Prototype""","""Mishka Lakhani""","""Yeeun Kim""","""""",TRUE,13,TRUE
+24,"""Music Production""","""Eric Xu""","""Seohyun Park""","""""",TRUE,20,TRUE
+25,"""On-Demand Video""","""Aswin Ram Krithivasan""","""Joshua Jeon""","""Daniel Hwang""",FALSE,6,TRUE
+26,"""Photographic Technology""","""Saumya Palipudi""","""Ayo Oyerinde""","""""",TRUE,24,TRUE
+27,"""Prepared Presentation""","""Sarah Ninan""","""""","""""",TRUE,6,TRUE
+28,"""Promotional Design""","""Iris Fan""","""Nikhita Chinmay""","""""",TRUE,4,TRUE
+29,"""Senior Solar Sprint""","""Zoe Lee""","""Diyora Eshova""","""""",TRUE,12,TRUE
+30,"""Software Development""","""Abishek Prabakar""","""Sanjar Zaman""","""""",TRUE,23,TRUE
+31,"""Structural Design""","""Nikhita Chinmay""","""Crystal Munoz""","""""",TRUE,16,TRUE
+32,"""Systems Control Technology""","""Shivani Shreedhar""","""Abishek Prabakar""","""Aayan Mukul""",FALSE,7,TRUE
+33,"""Technology Bowl""","""Kevin Jacob""","""Jason Dong""","""""",FALSE,4,TRUE
+34,"""Technology Problem Solving""","""Isaac Jerish""","""Nikoletta Levasova""","""""",TRUE,6,TRUE
+35,"""Transportation Modeling""","""Crystal Zheng""","""Youngjae Chang""","""""",FALSE,13,TRUE
+36,"""Video Game Design""","""Branden Kim""","""Bibek Bhattarai""","""""",TRUE,16,TRUE
+37,"""Virtual Reality Visualization""","""Yinuo Song""","""Isabella Garcia""","""""",TRUE,26,TRUE
+38,"""Webmaster""","""Aayan Mukul""","""Reeyan Khimani""","""""",TRUE,7,TRUE

@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, redirect, url_for, jsonify
 import mysql.connector
 from mysql.connector import (connection)
 import pandas as pd
@@ -13,7 +13,6 @@ cursor = db.cursor()
 
 @app.route('/')
 def index():
-    # Example query
     query = "SELECT * FROM member;"
     cursor.execute(query)
     data = cursor.fetchall()
@@ -22,3 +21,14 @@ def index():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+@app.route('/search', methods=['POST'])
+def search():
+    search_input = request.json.get('searchInput')
+
+    query = f"SELECT * FROM member WHERE first_name = '{search_input}';"
+    cursor.execute(query)
+    results = cursor.fetchall()
+
+    # You can format the results as needed and return them
+    return jsonify(results)
