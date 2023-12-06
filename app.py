@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 app.config["DEBUG"] = True
 
-db = connection.MySQLConnection(user="test", password="password1234", host="localhost", database='tsa-sql-database')
+db = connection.MySQLConnection(user="test", password="password1234", host="localhost", database='tsa')
 
 cursor = db.cursor()
 
