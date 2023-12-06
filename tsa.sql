@@ -1,12 +1,12 @@
-CREATE SCHEMA tsa;
+/*CREATE DATABASE tsa;
 
 CREATE TABLE member (id INTEGER, first_name TEXT, last_name TEXT,
 					phone_number TEXT, grade INTEGER, dues INTEGER,
-                    event1_id INTEGER, event2_id INTEGER, event3_id INTEGER,
+                    eventa_id INTEGER, eventb_id INTEGER, eventc_id INTEGER,
                     t_shirt_size TEXT, TL BOOLEAN, officer BOOLEAN, 
                     CO BOOLEAN, PRIMARY KEY (id));
-CREATE TABLE event (id INTEGER, name TEXT, TL1 INTEGER, TL2 INTEGER,
-                    TL3 INTEGER, project BOOLEAN, member_number INTEGER, 
+CREATE TABLE event (id INTEGER, name TEXT, TLA INTEGER, TLB INTEGER,
+                    TLC INTEGER, project BOOLEAN, member_number INTEGER, 
                     status TEXT, PRIMARY KEY (id));
 
 /*
@@ -18,15 +18,15 @@ INSERT INTO member VALUES(1, "Daniel", "Hwang", 12,
                           '''
                           */
 
-LOAD DATA INFILE 'event.csv'
-INTO TABLE event
+USE tsa;
+
+LOAD DATA INFILE 'event.csv' INTO TABLE event
 FIELDS TERMINATED BY ','
 IGNORE 1 ROWS;
 
-LOAD DATA INFILE 'member.csv'
-INTO TABLE member
+LOAD DATA INFILE 'member.csv' INTO TABLE member
 FIELDS TERMINATED BY ','
-IGNORE 1 ROWS;
+IGNORE 1 ROWS; 
 
 SELECT * FROM member LIMIT 10;
 
